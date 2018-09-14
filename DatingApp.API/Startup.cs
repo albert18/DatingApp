@@ -28,6 +28,9 @@ namespace DatingApp.API
             // Added Connection string service
             services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            //Services for Http to avoid CORRS
+            services.AddCors();
+
             services.AddMvc();
         }
 
@@ -39,6 +42,7 @@ namespace DatingApp.API
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyMethod().AllowAnyHeader());
             app.UseMvc();
         }
     }
