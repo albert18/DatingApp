@@ -1,12 +1,14 @@
 using System;
 using System.Threading.Tasks;
 using DatingApp.API.Data;
+using DatingApp.API.Dtos;
 using DatingApp.API.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DatingApp.API.Controllers
 {
     [Route ("api/[controller]")]
+    [Controller]
     public class AuthController : Controller
     {
         private readonly IAuthRepository _repo;
@@ -31,7 +33,7 @@ namespace DatingApp.API.Controllers
                 Username = username
             };
 
-            var createUser = await _repo.Register(userToCreate, password)
+            var createUser = await _repo.Register(userToCreate, username);
 
             return StatusCode(201);
         }
