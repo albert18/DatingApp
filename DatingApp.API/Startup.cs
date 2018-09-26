@@ -32,6 +32,9 @@ namespace DatingApp.API
             services.AddCors();
 
             services.AddMvc();
+
+            // Add Repository
+            services.AddScoped<IAuthRepository, AuthRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
