@@ -8,4 +8,4 @@ c:\Git\DatingApp\DatingApp.API\obj\Debug\netcoreapp2.0\DatingApp.API.AssemblyInf
 c:\Git\DatingApp\DatingApp.API\obj\Debug\netcoreapp2.0\DatingApp.API.AssemblyInfo.cs
 c:\Git\DatingApp\DatingApp.API\obj\Debug\netcoreapp2.0\DatingApp.API.dll
 c:\Git\DatingApp\DatingApp.API\obj\Debug\netcoreapp2.0\DatingApp.API.pdb
-c:\Git\DatingApp\DatingApp.API\obj\Debug\netcoreapp2.0\DatingApp.API.csprojResolveAssemblyReference.cache
+C:\Git\DatingApp\DatingApp.API\obj\Debug\netcoreapp2.0\DatingApp.API.csprojAssemblyReference.cache
