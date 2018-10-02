@@ -35,7 +35,7 @@
 
     <input class="form-control mr-sm-2" type="password" name="password" placeholder="password" required [(ngModel)]="model.password">
 
-    <button class="btn btn-success my-2 my-sm-0" type="submit">login</button>
+    <button [disabled]="!loginForm.valid" class="btn btn-success my-2 my-sm-0" type="submit">login</button>
   </form>
 
 
