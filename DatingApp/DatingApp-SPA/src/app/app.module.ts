@@ -20,7 +20,7 @@ import { AuthService } from './_services/auth.service';
       FormsModule
    ],
    providers: [
-     AuthService
+    AuthService
    ],
    bootstrap: [
       AppComponent
