@@ -19,10 +19,13 @@
   <div *ngIf="registerMode" class="container">
     <div class="row justify-content-center">
       <div class="col-4">
-        <app-register></app-register>
+        <app-register [valuesFromHome]="values"></app-register>
+        <!-- <app-register></app-register> -->
       </div>
     </div>
   </div>
 
 
 </div>
+<!-- <p *ngFor="let value of values">{{value.name}}</p> -->
+
