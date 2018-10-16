@@ -31,4 +31,9 @@ export class HomeComponent implements OnInit {
       console.log(error);
     });
   }
+
+  CencelRegisterMode(registerMode: boolean) {
+    this.registerMode = registerMode;
+  }
+
 }
