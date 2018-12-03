@@ -30,6 +30,13 @@ export class UserService {
       params = params.append('pageSize', itemsPerPage);
     }
 
+    if (userParams != null) {
+      params = params.append('minAge', userParams.minAge);
+      params = params.append('maxAge', userParams.maxAge);
+      params = params.append('gender', userParams.gender);
+      params = params.append('orderBy', userParams.orderBy);
+    }
+
     return this.http.get<User[]>(this.baseUrl + 'users', { observe: 'response', params})
     .pipe(
       map(response => {
